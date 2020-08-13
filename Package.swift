@@ -14,5 +14,9 @@ let package = Package(
     targets: [
         .target(name: "DateTimePicker", path: "Source")
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v5],
+    resources: [
+        .process("Source/DateTimePicker.xib"),
+        .process("Source/FullDateCollectionViewCell.xib"),
+    ],
 )
